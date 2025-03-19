@@ -14,6 +14,7 @@ class FirebaseNotifications{
      await _firebaseMessaging.requestPermission();
      String? token=await _firebaseMessaging.getToken();
      print("Token $token");
+     handleBackgroundNotification();
    }
 
 
